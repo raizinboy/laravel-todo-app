@@ -5,7 +5,7 @@
 @endpush
 
 @push ('scripts')
-    <script src="{{ asset('/js/script.js') }}"</script>
+    <script src="{{ asset('/js/script.js') }}"></script>
 @endpush
 
 @section('content')
