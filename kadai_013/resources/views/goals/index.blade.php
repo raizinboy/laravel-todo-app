@@ -92,6 +92,7 @@
                                                         @csrf
                                                         @method('patch')
                                                         <input type="hidden" name="content" value="{{ $todo->content }}">
+                                                        <textarea class="d-none" name="description">{{ $todo->description }}</textarea> 
                                                         @if ($todo->done)
                                                             <input type="hidden" name="done" value="{{ $todo->content }}">
                                                             <button type="submit" class="dropdown-item btn btn-link">未完了</button>

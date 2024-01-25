@@ -12,7 +12,7 @@
                     <label for="content">Todo</label>
                     <input type="text" class="form-control" name="content" value="{{ $todo->content }}">
                     <label for="description">詳細</label>
-                    <textarea class="form-control" name="description">{{ $todo->descripton }}</textarea>
+                    <textarea class="form-control" name="description">{{ $todo->description }}</textarea>
                     <div class="d-flex flex-wrap">   
                         @foreach ($tags as $tag)
                             <label>

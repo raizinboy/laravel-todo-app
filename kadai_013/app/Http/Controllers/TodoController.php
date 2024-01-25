@@ -51,7 +51,7 @@ class TodoController extends Controller
         $todo->goal_id =$goal->id;
         $todo->description = $request->input('description');
         $todo->done =$request->boolean('done', $todo->done);
-        $todo->save();
+        $todo->update();
 
         //「完了」と「未完了」の切り替え時でないとき（通常の編集時）にのみタグを変更する。(requestにdoneが入っていないとき)
         if( !$request->has('done')){
